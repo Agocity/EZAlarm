@@ -42,7 +42,8 @@ secondary:  #578F7A,
   green:      #cee6be,
   main:       #ebdf7b,
   good:       #4DC68F,
-  grey:     #8c8c8c
+grey:     #8c8c8c,
+  great:      #BDBDBD
 );
 
 $searchbar-md-input-background-color: #ffffff;
@@ -53,6 +54,10 @@ $searchbar-md-input-search-icon-color: #ffffff;
 $tabs-md-tab-icon-size:                3.7rem;
 $range-md-hit-width:                  27px;
 $select-md-placeholder-color:         #4DC68F;
+$button-md-border-radius:            7px;
+$button-md-height:                   3.7rem;
+$button-md-padding-end:	             1.5em;
+
 // $searchbar-md-padding-end: 0px;
 // $searchbar-md-padding-top: 0px;
 // $searchbar-md-padding-bottom: 0px;
