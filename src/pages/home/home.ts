@@ -29,11 +29,21 @@ export class HomePage {
         platform.ready().then(() => {
             this.loadMap();
         });
+          this.geofenceDetect();
     }
 
-    goefenceDetetct(){
-      if(Geofence.getWatched().length > 0
-)
+    geofenceDetect(){
+      // if(Geofence.getWatched().length > 0){
+      //   this.hidden = false }else{
+      //     this.hidden = true
+      //   }
+      Geofence.getWatched().then(function (geofencesJson) {
+  var geofences = JSON.parse(geofencesJson);
+  if(geofences.length > 0){
+        this.hidden = false }else{
+          this.hidden = true
+        }
+});
     }
 
 
