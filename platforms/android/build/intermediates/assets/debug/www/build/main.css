@@ -39352,6 +39352,18 @@ ion-app._gmaps_cdv_ .nav-decor {
   left: 7%;
 }
 
+#details {
+  position: absolute;
+  top: 76%;
+  margin: 2em auto 0 auto;
+  display: block;
+}
+
+#cta {
+  margin: 2em auto 0 auto;
+  display: block;
+}
+
 #search {
   position: absolute;
   top: .3%;

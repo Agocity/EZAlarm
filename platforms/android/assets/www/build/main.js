@@ -7,7 +7,7 @@ webpackJsonp([0],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -64,7 +64,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b>   \n        <img src={{src1}} (click)= "switch1()" style= "float: right; width: 80px;" >\n</ion-label>\n    </ion-item>\n    \n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b>  \n        <img src={{src2}} (click)= "switch2()" style= "float: right; width: 80px;" >\n</ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   \n   <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button1"> -->\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b>   \n        <img src={{src1}} (click)= "switch1()" style= "float: right; width: 80px;" >\n</ion-label>\n    </ion-item>\n    \n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b>  \n        <img src={{src2}} (click)= "switch2()" style= "float: right; width: 80px;" >\n</ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   \n   <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button1"> -->\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], AboutPage);
@@ -107,12 +107,13 @@ webpackEmptyAsyncContext.id = 189;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__about_about__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_global__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -130,6 +131,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 // import { LocationTracker } from '../../providers/location-tracker/location-tracker';
+
 
 
 
@@ -161,8 +163,17 @@ var SetAlarmPage = (function () {
     SetAlarmPage.prototype.reverseLocation = function () {
         var _this = this;
         this.nativeGeocoder.forwardGeocode(this.destination)
-            .then(function (coordinates) { return _this.setGeofence(_this.radius, coordinates); })
-            .catch(function (error) { return console.log(error); });
+            .then(function (coordinates) {
+            _this.setGeofence(_this.radius, coordinates);
+            __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden = true;
+            __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].finaldestination = _this.destination;
+            _this.navCtrl.popToRoot();
+        })
+            .catch(function (error) {
+            __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden = true;
+            __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].finaldestination = _this.destination;
+            _this.navCtrl.popToRoot();
+        });
     };
     SetAlarmPage.prototype.home = function () {
         this.navCtrl.pop(__WEBPACK_IMPORTED_MODULE_7__home_home__["a" /* HomePage */]);
@@ -258,9 +269,22 @@ SetAlarmPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return global; });
+var global = {
+    hidden: false,
+    finaldestination: ""
+};
+//# sourceMappingURL=global.js.map
+
+/***/ }),
+
+/***/ 390:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(395);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -268,7 +292,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 394:
+/***/ 395:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -277,13 +301,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(438);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(707);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_active_active__ = __webpack_require__(707);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_active_active__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_background_geolocation__ = __webpack_require__(388);
@@ -353,7 +377,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 437:
+/***/ 438:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -402,7 +426,7 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 706:
+/***/ 707:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -437,14 +461,14 @@ ContactPage = __decorate([
 
 /***/ }),
 
-/***/ 707:
+/***/ 708:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(75);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -489,12 +513,13 @@ ActivePage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_global__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -512,6 +537,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var HomePage = HomePage_1 = (function () {
     function HomePage(geolocation, vibration, navCtrl, platform, nativeGeocoder) {
         var _this = this;
@@ -521,10 +548,21 @@ var HomePage = HomePage_1 = (function () {
         this.platform = platform;
         this.nativeGeocoder = nativeGeocoder;
         this.rootPage = HomePage_1;
+        this.hidden = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden;
+        console.log(__WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden);
         platform.ready().then(function () {
             _this.loadMap();
         });
     }
+    HomePage.prototype.geofenceDetect = function () {
+        this.hidden = true;
+    };
+    HomePage.prototype.ionViewWillEnter = function () {
+        this.finaldestination = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].finaldestination;
+        this.hidden = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden;
+        console.log(this.hidden);
+        console.log(__WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden);
+    };
     HomePage.prototype.setAlarm = function () {
         var _this = this;
         this.nativeGeocoder.forwardGeocode(this.destination)
@@ -537,6 +575,11 @@ var HomePage = HomePage_1 = (function () {
         // this.navCtrl.push(SetAlarmPage,{
         //     destination: this.destination
         //   })
+    };
+    HomePage.prototype.cancel = function () {
+        __WEBPACK_IMPORTED_MODULE_2_ionic_native__["a" /* Geofence */].removeAll();
+        __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden = false;
+        this.hidden = false;
     };
     HomePage.prototype.setting = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__about_about__["a" /* AboutPage */]);
@@ -601,7 +644,7 @@ var HomePage = HomePage_1 = (function () {
 }());
 HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="setting()" id="click3" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
+        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="setting()" id="click3" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n\n <div style= "padding-top: 87%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">\n  <ion-card-content >\n   <h2>Destination: {{finaldestination}}</h2>\n  </ion-card-content>\n</ion-card>\n<img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">\n</div>\n  </div></ion-content>  '/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
@@ -612,5 +655,5 @@ var HomePage_1;
 
 /***/ })
 
-},[389]);
+},[390]);
 //# sourceMappingURL=main.js.map

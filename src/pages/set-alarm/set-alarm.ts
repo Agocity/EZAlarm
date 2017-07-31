@@ -10,6 +10,7 @@ import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResul
 import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-native/background-geolocation';
 import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
+import { global } from '../../app/global'
 
 
 
@@ -56,8 +57,19 @@ import { AboutPage } from '../about/about';
 reverseLocation(){
 
   this.nativeGeocoder.forwardGeocode(this.destination)
-    .then((coordinates: NativeGeocoderForwardResult) => this.setGeofence(this.radius, coordinates))
-    .catch((error: any) => console.log(error));
+    .then((coordinates: NativeGeocoderForwardResult) => {
+      this.setGeofence(this.radius, coordinates)
+     global.hidden= true
+     global.finaldestination = this.destination
+      this.navCtrl.popToRoot(); 
+    
+    }) 
+    .catch((error: any) => {
+      global.hidden= true
+     global.finaldestination = this.destination
+      this.navCtrl.popToRoot(); 
+    });
+  
 
 
 

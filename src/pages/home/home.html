@@ -11,10 +11,11 @@
   <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>
  <button ion-button (click)="setting()" id="click3" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>
 
- <div style= "padding-top: 87%;" > <ion-card style="width: 95%;" id="cta">
-  <ion-card-content>
-   <h2>Destination: {{destination}}</h2>
+ <div style= "padding-top: 87%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">
+  <ion-card-content >
+   <h2>Destination: {{finaldestination}}</h2>
   </ion-card-content>
 </ion-card>
 <img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">
 </div>
+  </div></ion-content>  

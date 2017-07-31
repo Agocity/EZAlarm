@@ -8,6 +8,7 @@ import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResul
 
 import { SetAlarmPage } from '../set-alarm/set-alarm';
 import { AboutPage } from '../about/about';
+import { global } from '../../app/global'
 
 
 
@@ -22,29 +23,28 @@ export class HomePage {
     destination: any;
     public rootPage: any = HomePage;
     hidden: boolean;
+    finaldestination: any;
 
     constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
       public platform: Platform, private nativeGeocoder: NativeGeocoder) {
+        this.hidden = global.hidden
+        console.log(global.hidden)
 
         platform.ready().then(() => {
             this.loadMap();
         });
-          this.geofenceDetect();
     }
 
     geofenceDetect(){
-      // if(Geofence.getWatched().length > 0){
-      //   this.hidden = false }else{
-      //     this.hidden = true
-      //   }
-      Geofence.getWatched().then(function (geofencesJson) {
-  var geofences = JSON.parse(geofencesJson);
-  if(geofences.length > 0){
-        this.hidden = false }else{
-          this.hidden = true
-        }
-});
+          this.hidden = true;
     }
+        ionViewWillEnter(){
+          this.finaldestination = global.finaldestination
+          this.hidden = global.hidden
+          console.log(this.hidden)
+          console.log(global.hidden)
+           
+        }
 
 
     setAlarm() {
@@ -61,7 +61,8 @@ export class HomePage {
       }
       cancel(){
         Geofence.removeAll();
-        
+        global.hidden = false;
+        this.hidden = false;
       }
 
       setting() {
