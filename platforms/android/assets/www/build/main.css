@@ -39377,7 +39377,7 @@ ion-range, ion-item {
 #button1 {
   position: absolute;
   top: 7%;
-  right: 32%;
+  align: center;
 }
 
 #click1 {

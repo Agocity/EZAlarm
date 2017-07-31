@@ -29,7 +29,31 @@ var AboutPage = (function () {
         this.geolocation = geolocation;
         this.vibration = vibration;
         this.navCtrl = navCtrl;
+        this.src1 = "assets/images/on.png";
+        this.on1 = true;
+        this.src2 = "assets/images/on.png";
+        this.on2 = true;
     }
+    AboutPage.prototype.switch1 = function () {
+        if (this.on1) {
+            this.src1 = "assets/images/off.png";
+            this.on1 = false;
+        }
+        else {
+            this.src1 = "assets/images/on.png";
+            this.on1 = true;
+        }
+    };
+    AboutPage.prototype.switch2 = function () {
+        if (this.on2) {
+            this.src2 = "assets/images/off.png";
+            this.on2 = false;
+        }
+        else {
+            this.src2 = "assets/images/on.png";
+            this.on2 = true;
+        }
+    };
     AboutPage.prototype.home = function () {
         this.navCtrl.popToRoot(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
     };
@@ -40,7 +64,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>\n    </ion-item>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button1">\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b>   \n        <img src={{src1}} (click)= "switch1()" style= "float: right; width: 80px;" >\n</ion-label>\n    </ion-item>\n    \n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b>  \n        <img src={{src2}} (click)= "switch2()" style= "float: right; width: 80px;" >\n</ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   \n   <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button1"> -->\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], AboutPage);
@@ -219,7 +243,7 @@ var SetAlarmPage = (function () {
 }());
 SetAlarmPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n  <!-- <img src= "assets/images/Tab.png" style= "width: 80px;" id="button"> -->\n\n  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><ion-card-header color="great" style= "text-align: center; font-weight: bold;">\n    <h5>Your destination is:</h5>\n  </ion-card-header>\n   \n  <ion-card-header style= "text-align: center; ">\n    <h3>{{destination}}</h3>\n    <button ion-button large id="cta" (click)="reverseLocation()" color="good" style= "font-size: 19px; width: 75%; height: 50px;">Set/1 Mile</button>\n\n  </ion-card-header>\n\n\n\n  <!-- <br/><br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item> -->\n\n     <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n     <button ion-button  (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n   <img src= "assets/images/logo.png" style= "width: 100px;" id="button1">\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
+        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n  <!-- <img src= "assets/images/Tab.png" style= "width: 80px;" id="button"> -->\n<img src= "assets/images/logo.png" style= "width: 100px;" id="cta">\n\n  <br/><br/><ion-card-header color="great" style= "text-align: center; font-weight: bold;">\n    <h5>Your destination is:</h5>\n  </ion-card-header>\n   \n  <ion-card-header style= "text-align: center; ">\n    <h3>{{destination}}</h3>\n    <button ion-button large id="cta" (click)="reverseLocation()" color="good" style= "font-size: 19px; width: 75%; height: 50px;">Set/1 Mile</button>\n\n  </ion-card-header>\n\n\n\n  <!-- <br/><br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item> -->\n\n     <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n     <button ion-button  (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n   \n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
@@ -507,7 +531,9 @@ var HomePage = HomePage_1 = (function () {
             .then(function (coordinates) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
             destination: _this.destination
         }); })
-            .catch(function (error) { return console.log(error); });
+            .catch(function (error) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
+            destination: _this.destination
+        }); });
         // this.navCtrl.push(SetAlarmPage,{
         //     destination: this.destination
         //   })

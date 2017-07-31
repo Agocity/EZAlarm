@@ -20,6 +20,8 @@ export class AboutPage {
   constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController) {
     this.src1 = "assets/images/on.png"
     this.on1 = true;
+    this.src2 = "assets/images/on.png"
+    this.on2 = true;
 
   }
 switch1(){
