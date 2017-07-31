@@ -12,10 +12,35 @@ import { HomePage } from '../home/home';
   templateUrl: 'about.html'
 })
 export class AboutPage {
+  src1: string;
+  on1: boolean;
+  src2: string;
+  on2: boolean;
 
   constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController) {
+    this.src1 = "assets/images/on.png"
+    this.on1 = true;
 
   }
+switch1(){
+  if (this.on1){
+    this.src1 ="assets/images/off.png"
+    this.on1= false;
+  }else{
+this.src1 ="assets/images/on.png"  
+this.on1= true;
+  }
+}
+
+switch2(){
+  if (this.on2){
+    this.src2 ="assets/images/off.png"
+    this.on2= false;
+  }else{
+this.src2 ="assets/images/on.png"  
+this.on2= true;
+  }
+}
   home() {
       this.navCtrl.popToRoot(HomePage)
 

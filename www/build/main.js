@@ -29,7 +29,29 @@ var AboutPage = (function () {
         this.geolocation = geolocation;
         this.vibration = vibration;
         this.navCtrl = navCtrl;
+        this.src1 = "assets/images/on.png";
+        this.on1 = true;
     }
+    AboutPage.prototype.switch1 = function () {
+        if (this.on1) {
+            this.src1 = "assets/images/off.png";
+            this.on1 = false;
+        }
+        else {
+            this.src1 = "assets/images/on.png";
+            this.on1 = true;
+        }
+    };
+    AboutPage.prototype.switch2 = function () {
+        if (this.on2) {
+            this.src2 = "assets/images/off.png";
+            this.on2 = false;
+        }
+        else {
+            this.src2 = "assets/images/on.png";
+            this.on2 = true;
+        }
+    };
     AboutPage.prototype.home = function () {
         this.navCtrl.popToRoot(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
     };
@@ -40,11 +62,12 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>\n    </ion-item>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button1">\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>\n    </ion-item>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   <img src={{src1}} (click)= "switch1()" style= "width: 80px;" id="button1">\n   \n   <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button1"> -->\n   <img src={{src2}} (click)= "switch2()" style= "width: 80px;" id="button2">\n\n    <!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button2"> -->\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _c || Object])
 ], AboutPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=about.js.map
 
 /***/ }),
@@ -579,10 +602,11 @@ HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="setting()" id="click3" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
 ], HomePage);
 
-var HomePage_1, _a, _b, _c, _d, _e;
+var HomePage_1;
 //# sourceMappingURL=home.js.map
 
 /***/ })
