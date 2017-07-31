@@ -3,6 +3,7 @@ import { NavController, Platform } from 'ionic-angular';
 import { GoogleMap, GoogleMapsEvent, GoogleMapsLatLng } from 'ionic-native';
 import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Geofence, SMS} from 'ionic-native';
 import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
 import { SetAlarmPage } from '../set-alarm/set-alarm';
@@ -20,6 +21,7 @@ export class HomePage {
     map: GoogleMap;
     destination: any;
     public rootPage: any = HomePage;
+    hidden: boolean;
 
     constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
       public platform: Platform, private nativeGeocoder: NativeGeocoder) {
@@ -27,6 +29,11 @@ export class HomePage {
         platform.ready().then(() => {
             this.loadMap();
         });
+    }
+
+    goefenceDetetct(){
+      if(Geofence.getWatched().length > 0
+)
     }
 
 
@@ -41,6 +48,10 @@ export class HomePage {
       //     destination: this.destination
       //   })
 
+      }
+      cancel(){
+        Geofence.removeAll();
+        
       }
 
       setting() {

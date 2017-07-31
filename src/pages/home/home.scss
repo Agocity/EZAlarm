@@ -10,10 +10,25 @@ ion-app._gmaps_cdv_ .nav-decor{
     left: 7%;
   }
 
+#details {
+    position: absolute;
+    top: 76%;
+    // margin: 0px 5px 0px 5px;
+    margin: 2em auto 0 auto;
+    // align: center;
+    display:block;
+
+  }
+  #cta {
+    margin: 2em auto 0 auto;
+    display:block;
+}
+
   #search {
       position: absolute;
       top: .3%;
     }
+    
 
   #click2 {
       position: absolute;
