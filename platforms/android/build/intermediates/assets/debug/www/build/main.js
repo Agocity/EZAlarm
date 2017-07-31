@@ -520,10 +520,10 @@ var HomePage = HomePage_1 = (function () {
     };
     HomePage.prototype.loadMap = function () {
         var location = new __WEBPACK_IMPORTED_MODULE_2_ionic_native__["d" /* GoogleMapsLatLng */](-34.9290, 138.6010);
-        //     this.geolocation.getCurrentPosition().then((position) => {    //      console.log()
-        //   // location = new GoogleMapsLatLng(position.coords.latitude, position.coords.longitude)
-        //   console.log(position.coords.latitude)
-        // }).catch((error: any) => console.log(error));
+        this.geolocation.getCurrentPosition().then(function (position) {
+            location = new __WEBPACK_IMPORTED_MODULE_2_ionic_native__["d" /* GoogleMapsLatLng */](position.coords.latitude, position.coords.longitude);
+            console.log(position.coords.latitude);
+        }).catch(function (error) { return console.log(error); });
         this.map = new __WEBPACK_IMPORTED_MODULE_2_ionic_native__["b" /* GoogleMap */]('map', {
             'backgroundColor': '#4DC68F',
             'controls': {

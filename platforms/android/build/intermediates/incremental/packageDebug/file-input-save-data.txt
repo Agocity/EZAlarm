@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Jul 29 14:20:38 PDT 2017
+#Sat Jul 29 14:33:10 PDT 2017
 122.file=/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/resources-debug.ap_/res/drawable-land-xxxhdpi-v4/screen.png
 60.set=ANDROID_RESOURCE
 129.file=/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/assets/debug/www/manifest.json
