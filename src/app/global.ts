@@ -1,4 +1,7 @@
 export var global= {
     hidden: false, 
-    finaldestination: ""
+    finaldestination: "",  
+    notification: true,
+    vibration: true
+
 }

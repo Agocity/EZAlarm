@@ -4,6 +4,7 @@ import { GoogleMap, GoogleMapsEvent, GoogleMapsLatLng } from 'ionic-native';
 import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Geofence, SMS} from 'ionic-native';
+import { Keyboard } from '@ionic-native/keyboard';
 import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
 import { SetAlarmPage } from '../set-alarm/set-alarm';
@@ -24,11 +25,22 @@ export class HomePage {
     public rootPage: any = HomePage;
     hidden: boolean;
     finaldestination: any;
+    keyboardClosed: boolean;
 
-    constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
+    constructor(private keyboard: Keyboard, private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
       public platform: Platform, private nativeGeocoder: NativeGeocoder) {
         this.hidden = global.hidden
         console.log(global.hidden)
+        this.keyboardClosed = true
+  
+        keyboard.onKeyboardShow()
+          .subscribe(data => {
+            this.keyboardClosed = false       //your code goes here
+         });
+          keyboard.onKeyboardHide()
+          .subscribe(data => {
+            this.keyboardClosed = true      //your code goes here
+         });
 
         platform.ready().then(() => {
             this.loadMap();

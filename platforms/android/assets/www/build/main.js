@@ -99,7 +99,7 @@ webpackEmptyAsyncContext.id = 189;
 
 /***/ }),
 
-/***/ 387:
+/***/ 388:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -110,10 +110,10 @@ webpackEmptyAsyncContext.id = 189;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__about_about__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_global__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_global__ = __webpack_require__(390);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -265,7 +265,7 @@ SetAlarmPage = __decorate([
 
 /***/ }),
 
-/***/ 389:
+/***/ 390:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -278,13 +278,13 @@ var global = {
 
 /***/ }),
 
-/***/ 390:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(396);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -292,32 +292,34 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 395:
+/***/ 396:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(708);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_active_active__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_active_active__ = __webpack_require__(709);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_background_geolocation__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_geocoder__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_keyboard__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_geolocation__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_native_geocoder__ = __webpack_require__(134);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -365,9 +367,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_13__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */],
-            __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
+            __WEBPACK_IMPORTED_MODULE_15__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_keyboard__["a" /* Keyboard */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -377,7 +380,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 438:
+/***/ 439:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -426,7 +429,7 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 707:
+/***/ 708:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -461,7 +464,7 @@ ContactPage = __decorate([
 
 /***/ }),
 
-/***/ 708:
+/***/ 709:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -516,10 +519,11 @@ ActivePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_global__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_geocoder__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__set_alarm_set_alarm__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__about_about__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_global__ = __webpack_require__(390);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -539,17 +543,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = HomePage_1 = (function () {
-    function HomePage(geolocation, vibration, navCtrl, platform, nativeGeocoder) {
+    function HomePage(keyboard, geolocation, vibration, navCtrl, platform, nativeGeocoder) {
         var _this = this;
+        this.keyboard = keyboard;
         this.geolocation = geolocation;
         this.vibration = vibration;
         this.navCtrl = navCtrl;
         this.platform = platform;
         this.nativeGeocoder = nativeGeocoder;
         this.rootPage = HomePage_1;
-        this.hidden = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden;
-        console.log(__WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden);
+        this.hidden = __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden;
+        console.log(__WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden);
+        this.keyboardClosed = true;
+        keyboard.onKeyboardShow()
+            .subscribe(function (data) {
+            _this.keyboardClosed = false; //your code goes here
+        });
+        keyboard.onKeyboardHide()
+            .subscribe(function (data) {
+            _this.keyboardClosed = true; //your code goes here
+        });
         platform.ready().then(function () {
             _this.loadMap();
         });
@@ -558,18 +573,18 @@ var HomePage = HomePage_1 = (function () {
         this.hidden = true;
     };
     HomePage.prototype.ionViewWillEnter = function () {
-        this.finaldestination = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].finaldestination;
-        this.hidden = __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden;
+        this.finaldestination = __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].finaldestination;
+        this.hidden = __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden;
         console.log(this.hidden);
-        console.log(__WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden);
+        console.log(__WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden);
     };
     HomePage.prototype.setAlarm = function () {
         var _this = this;
         this.nativeGeocoder.forwardGeocode(this.destination)
-            .then(function (coordinates) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
+            .then(function (coordinates) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
             destination: _this.destination
         }); })
-            .catch(function (error) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
+            .catch(function (error) { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
             destination: _this.destination
         }); });
         // this.navCtrl.push(SetAlarmPage,{
@@ -578,11 +593,11 @@ var HomePage = HomePage_1 = (function () {
     };
     HomePage.prototype.cancel = function () {
         __WEBPACK_IMPORTED_MODULE_2_ionic_native__["a" /* Geofence */].removeAll();
-        __WEBPACK_IMPORTED_MODULE_8__app_global__["a" /* global */].hidden = false;
+        __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden = false;
         this.hidden = false;
     };
     HomePage.prototype.setting = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__about_about__["a" /* AboutPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__about_about__["a" /* AboutPage */]);
     };
     HomePage.prototype.vibrate = function () {
         this.vibration.vibrate(3000);
@@ -644,10 +659,10 @@ var HomePage = HomePage_1 = (function () {
 }());
 HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="setting()" id="click3" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n\n <div style= "padding-top: 79%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">\n  <ion-card-content >\n   <h2>Destination: {{finaldestination}}</h2>\n  </ion-card-content>\n</ion-card>\n<img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">\n</div>\n  </div></ion-content>'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
+        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"   *ngIf= "keyboardClosed" color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" *ngIf= "keyboardClosed" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="setting()" id="click3" *ngIf= "keyboardClosed" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n\n <div style= "padding-top: 79%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">\n  <ion-card-content >\n   <h2>Destination: {{finaldestination}}</h2>\n  </ion-card-content>\n</ion-card>\n<img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">\n</div>\n  </div></ion-content>'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
 ], HomePage);
 
 var HomePage_1;
@@ -655,5 +670,5 @@ var HomePage_1;
 
 /***/ })
 
-},[390]);
+},[391]);
 //# sourceMappingURL=main.js.map

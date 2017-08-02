@@ -4,6 +4,8 @@ import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
 
 import { HomePage } from '../home/home';
+import { global } from '../../app/global'
+
 
 
 
@@ -28,9 +30,11 @@ switch1(){
   if (this.on1){
     this.src1 ="assets/images/off.png"
     this.on1= false;
+    global.notification = false
   }else{
 this.src1 ="assets/images/on.png"  
 this.on1= true;
+global.notification = true
   }
 }
 
@@ -38,9 +42,12 @@ switch2(){
   if (this.on2){
     this.src2 ="assets/images/off.png"
     this.on2= false;
+    global.vibration = false
   }else{
 this.src2 ="assets/images/on.png"  
 this.on2= true;
+global.vibration = true
+
   }
 }
   home() {

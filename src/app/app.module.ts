@@ -15,6 +15,7 @@ import { ActivePage } from '../pages/active/active';
 import { Vibration } from '@ionic-native/vibration';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Keyboard } from '@ionic-native/keyboard';
 import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-native/background-geolocation';
 import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
@@ -48,6 +49,7 @@ import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResul
     BackgroundGeolocation,
     Geolocation,
     NativeGeocoder,
+    Keyboard,
 
 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
