@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/mipmap-ldpi/icon.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/mipmap-ldpi/icon.png"
+    },
+    {
         "merged": "/Users/Gio/IonicProjects/test2/platforms/android/build/intermediates/res/merged/debug/mipmap-ldpi/icon.png",
         "source": "/Users/Gio/IonicProjects/test2/platforms/android/res/mipmap-ldpi/icon.png"
     },

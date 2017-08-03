@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/drawable-land-xxxhdpi/screen.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/drawable-land-xxxhdpi/screen.png"
+    },
+    {
         "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/drawable-land-xxxhdpi/screen.png",
         "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/drawable-land-xxxhdpi/screen.png"
     },

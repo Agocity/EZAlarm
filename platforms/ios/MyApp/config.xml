@@ -76,13 +76,28 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
+    <feature name="BackgroundGeolocation">
+        <param name="ios-package" value="CDVBackgroundGeolocation" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GeofencePlugin">
+        <param name="ios-package" value="HWPGeofencePlugin" />
+    </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.0.1.253:8101" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://10.0.1.253:8101" />
+    <allow-navigation href="http://10.120.18.248:8101" />
+    <allow-navigation href="http://10.120.18.248:8100" />
+    <allow-navigation href="http://172.27.0.64:8100" />
+    <allow-navigation href="http://10.120.18.248:8102" />
+    <allow-navigation href="http://172.27.0.64:8101" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -144,14 +159,4 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
-    <feature name="BackgroundGeolocation">
-        <param name="ios-package" value="CDVBackgroundGeolocation" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="GeofencePlugin">
-        <param name="ios-package" value="HWPGeofencePlugin" />
-    </feature>
-    <feature name="Sms">
-        <param name="ios-package" value="Sms" />
-    </feature>
 </widget>

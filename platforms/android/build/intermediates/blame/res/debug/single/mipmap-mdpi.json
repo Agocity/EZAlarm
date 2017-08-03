@@ -1,7 +1,15 @@
 [
     {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/mipmap-mdpi/icon.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/mipmap-mdpi/icon.png"
+    },
+    {
         "merged": "/Users/Gio/IonicProjects/test2/platforms/android/build/intermediates/res/merged/debug/mipmap-mdpi/icon.png",
         "source": "/Users/Gio/IonicProjects/test2/platforms/android/res/mipmap-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/drawable-port-hdpi/screen.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/drawable-port-hdpi/screen.png"
+    },
+    {
         "merged": "/Users/Gio/IonicProjects/test2/platforms/android/build/intermediates/res/merged/debug/drawable-port-hdpi/screen.png",
         "source": "/Users/Gio/IonicProjects/test2/platforms/android/res/drawable-port-hdpi/screen.png"
     },

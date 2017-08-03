@@ -4,6 +4,10 @@
         "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/drawable-port-xxhdpi/screen.png"
     },
     {
+        "merged": "/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/res/merged/debug/drawable-port-xxhdpi/screen.png",
+        "source": "/Users/Gio/IonicProjects/EzStop/platforms/android/res/drawable-port-xxhdpi/screen.png"
+    },
+    {
         "merged": "/Users/Gio/IonicProjects/test2/platforms/android/build/intermediates/res/merged/debug/drawable-port-xxhdpi/screen.png",
         "source": "/Users/Gio/IonicProjects/test2/platforms/android/res/drawable-port-xxhdpi/screen.png"
     }
