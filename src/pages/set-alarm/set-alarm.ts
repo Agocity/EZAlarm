@@ -92,30 +92,78 @@ home() {
     console.log(location.latitude)
 
 
-
     // this.reverseLocation();
     this.geolocation.getCurrentPosition({
       enableHighAccuracy: true
     }).then((resp) => {
+      global.destination = resp;
       var longitude= location.longitude;
       var latitude = location.latitude;
       var radius = value;
-
-
-      let fence = {
-          id: "myGeofenceID1",
-          latitude:       latitude,
-          longitude:      longitude,
-          radius:         radius,
-          transitionType: 1,
-          notification: { //notification settings
-       id:             1, //any unique ID
-       title:          'ALERT', //notification title
-       text:           '!!YOU ARE IN NEAR PROXIMITY OF YOUR STOP!!', //notification body
-       openAppOnClick: true ,
-       vibration:      [1000, 5000, 2000]
-   }
+let fence;
+ if(global.notification && global.vibration){
+          fence = {
+              id: "myGeofenceID1",
+              latitude:       latitude,
+              longitude:      longitude,
+              radius:         radius,
+              transitionType: 1,
+              notification: { //notification settings
+           id:             1, //any unique ID
+           title:          'ALERT', //notification title
+           text:           '!!YOU ARE IN NEAR PROXIMITY OF YOUR STOP!!', //notification body
+           openAppOnClick: true 
         }
+            }
+      } else if(global.notification){
+        fence = {
+            id: "myGeofenceID1",
+            latitude:       latitude,
+            longitude:      longitude,
+            radius:         radius,
+            transitionType: 1,
+            notification: { //notification settings
+         id:             1, //any unique ID
+         title:          'ALERT', //notification title
+         text:           '!!YOU ARE IN NEAR PROXIMITY OF YOUR STOP!!', //notification body
+         openAppOnClick: true
+      }
+    }
+      } else{ // if(global.vibration)
+        fence = {
+            id: "myGeofenceID1",
+            latitude:       latitude,
+            longitude:      longitude,
+            radius:         radius,
+            transitionType: 1
+          }
+      }
+
+
+
+
+        Geofence.addOrUpdate(fence).then(
+          () => this.success = true,
+          (err) => this.error = "Failed to add or update the fence."
+        );
+
+    //     Geofence.onTransitionReceived().subscribe(resp => {
+    //       this.vibration.vibrate(3000)
+    //    SMS.send('3239897826', 'Your stop is in close proximity!!!');
+    //  });
+
+    if(global.vibration){
+      //vibration logic
+      Geofence.onTrasitionReceived().then(()=>{
+        for(let i = 0; i < 5; i++){
+           setTimeout(() =>{
+              this.vibration.vibrate(1000); }, 5000);
+
+        }
+      })
+    }
+
+
 
         Geofence.addOrUpdate(fence).then(
           () => this.success = true,

@@ -55,8 +55,28 @@ export class HomePage {
           this.hidden = global.hidden
           console.log(this.hidden)
           console.log(global.hidden)
+          if(global.hidden){
+            console.log('hi')
+          this.map.addMarker({
+     'position': global.destination,
+     'title': global.finaldestination
+   })
+        }
            
         }
+
+  moveCamera(){
+      this.map.getMyLocation((position)=>{
+      console.log(position.latLng.lat + "AND" + position.latLng.lng)
+      this.map.moveCamera({
+      'target': position.latLng,
+      'zoom': 15,
+      'bearing': 140
+  });
+      }).catch((error)=>{
+        console.log("Hi" + error)
+      });
+    }
 
 
     setAlarm() {
