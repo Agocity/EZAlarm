@@ -619,6 +619,7 @@ var HomePage = HomePage_1 = (function () {
         platform.ready().then(function () {
             _this.loadMap();
         });
+        this.moveCamera();
     }
     HomePage.prototype.geofenceDetect = function () {
         this.hidden = true;

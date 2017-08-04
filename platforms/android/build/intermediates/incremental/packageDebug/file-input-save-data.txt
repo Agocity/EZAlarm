@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Aug 02 23:13:58 PDT 2017
+#Thu Aug 03 08:01:20 PDT 2017
 122.file=/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/assets/debug/www/build/vendor.js.map
 60.set=ASSET
 129.file=/Users/Gio/IonicProjects/EzStop/platforms/android/build/intermediates/assets/debug/www/cordova.js

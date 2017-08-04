@@ -618,7 +618,9 @@ var HomePage = HomePage_1 = (function () {
         });
         platform.ready().then(function () {
             _this.loadMap();
+            _this.moveCamera();
         });
+        //  this.moveCamera()
     }
     HomePage.prototype.geofenceDetect = function () {
         this.hidden = true;
@@ -628,13 +630,13 @@ var HomePage = HomePage_1 = (function () {
         this.hidden = __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden;
         console.log(this.hidden);
         console.log(__WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden);
-        if (__WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].hidden) {
-            console.log('hi');
-            this.map.addMarker({
-                'position': __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].destination,
-                'title': __WEBPACK_IMPORTED_MODULE_9__app_global__["a" /* global */].finaldestination
-            });
-        }
+        //         if(global.hidden){
+        //           console.log('hi')
+        //         this.map.addMarker({
+        //    'position': global.destination,
+        //    'title': global.finaldestination
+        //  })
+        //       }
     };
     HomePage.prototype.moveCamera = function () {
         var _this = this;
@@ -730,13 +732,12 @@ var HomePage = HomePage_1 = (function () {
 }());
 HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/EzStop/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <button ion-button (click)="home()" id="click1"   *ngIf= "keyboardClosed" color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" *ngIf="keyboardClosed && !hidden" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="moveCamera()" id="click3" *ngIf= "keyboardClosed" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n\n <div style= "padding-top: 79%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">\n  <ion-card-content >\n   <h2>Destination: {{finaldestination}}</h2>\n  </ion-card-content>\n</ion-card>\n<img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">\n</div>\n  </div></ion-content>'/*ion-inline-end:"/Users/Gio/IonicProjects/EzStop/src/pages/home/home.html"*/
+        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/EzStop/src/pages/home/home.html"*/'\n<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n\n  <button ion-button (click)="setting()" id="click2" *ngIf="keyboardClosed && !hidden" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n <button ion-button (click)="moveCamera()" id="click3" *ngIf= "keyboardClosed" color="good"><img src= "assets/images/location.png" style= "width: 30px; height: 30px;"></button>\n\n <div style= "padding-top: 79%;" *ngIf= "hidden" > <ion-card style="width: 95%;" id="cta">\n  <ion-card-content >\n   <h2>Destination: {{finaldestination}}</h2>\n  </ion-card-content>\n</ion-card>\n<img src="assets/images/cancel.png" (click)="cancel()" style="height: 43px;" id="cta">\n</div>\n  </div></ion-content>'/*ion-inline-end:"/Users/Gio/IonicProjects/EzStop/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__["a" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__["a" /* Keyboard */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_geocoder__["a" /* NativeGeocoder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_geocoder__["a" /* NativeGeocoder */]) === "function" && _f || Object])
 ], HomePage);
 
-var HomePage_1;
+var HomePage_1, _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=home.js.map
 
 /***/ })

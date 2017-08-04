@@ -32,6 +32,7 @@ export class HomePage {
         this.hidden = global.hidden
         console.log(global.hidden)
         this.keyboardClosed = true
+        
   
         keyboard.onKeyboardShow()
           .subscribe(data => {
@@ -44,8 +45,14 @@ export class HomePage {
 
         platform.ready().then(() => {
             this.loadMap();
+                   this.moveCamera()
+
         });
-    }
+    
+      //  this.moveCamera()
+
+
+      }
 
     geofenceDetect(){
           this.hidden = true;
@@ -55,13 +62,13 @@ export class HomePage {
           this.hidden = global.hidden
           console.log(this.hidden)
           console.log(global.hidden)
-          if(global.hidden){
-            console.log('hi')
-          this.map.addMarker({
-     'position': global.destination,
-     'title': global.finaldestination
-   })
-        }
+  //         if(global.hidden){
+  //           console.log('hi')
+  //         this.map.addMarker({
+  //    'position': global.destination,
+  //    'title': global.finaldestination
+  //  })
+  //       }
            
         }
 
